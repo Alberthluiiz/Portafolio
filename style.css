@@ -21,8 +21,29 @@ h1 {
     font-family: 'Rubik Dirt', cursive;
 }
 
+.seccion-obscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara {
+    color: black;    
+    background-color: white;
+}
+
 .her-principal {
     padding: 3rem;
+}
+
+/* sobre mi */
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
 }
 
 /* Estilos Generales */
@@ -44,9 +65,43 @@ section {
     color: #615151;
 }
 
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
 /* Adaptable (Responsivo) */
 @media screen and (max-width: 500px) {
     .navbar-brand {
         display: none;
     }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+        width: 900px;
+    }
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia .row div {
+    height: 250px;
+    background-color: purple;
+    border: 3px solid orange ;
+}
+
+.experiencia-titulo {
+    font-size: 25px;   
+    font-weight: bold;
+    margin: 10px 0;
 }
