@@ -10,11 +10,9 @@ body {
 }
 
 nav {
-  /*     background-color: green; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 10px 5px 5px white;
 }
 nav .logo {
   height: 60px;
@@ -45,37 +43,81 @@ nav a:hover {
   color: orange;
 }
 
-main {
-  /* background-color: gray; */
+main .welcome {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 75px;
+  margin-top: 100px;
 }
-main .title-welcome {
-  font-size: 45px;
+main .welcome p {
+  font-family: cursive;
+  color: white;
+  font-size: 5rem;
+  text-shadow: 10px 10px 7px white;
+}
+main .about-me {
   display: flex;
-  color: white;
-  justify-content: last baseline;
-  padding: 2%;
-  /* background-color: yellow; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
 }
-main .title-about-me {
-  /* background-color: aqua; */
-  font-size: 45px;
+main .about-me p {
+  font-size: 36px;
   color: white;
+}
+main .container-about-me {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+main .container-about-me .img-about-me {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container-about-me .img-about-me img {
+  width: 300px;
+  border-radius: 10%;
+}
+main .container-about-me .description-about-me {
+  width: 50%;
+}
+main .container-about-me .description-about-me p {
+  margin: 50px;
+  text-align: justify;
+  color: white;
+}
+main .container-habilitys {
+  height: 600px;
+}
+main .container-habilitys .title-habilitys p {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  padding: 30px;
+}
+main .container-habilitys .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2%;
 }
-
-.about-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: aqua;
+main .container-habilitys .container .text-habilitys {
+  padding: 50px;
+  width: 50%;
+  color: white;
 }
-.about-me .profile {
+main .container-habilitys .container .img-habilitys {
   display: flex;
-  flex-direction: row img;
-  flex-direction-width: 500px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+main .container-habilitys .container .img-habilitys img {
+  width: 200px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -3,83 +3,159 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
-body{
+  }
+  
+  body{
     background: #1E2B38;
-}
-
-
-nav{
-/*     background-color: green; */
+  }
+  
+  nav{
+    // background-color: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 10px 5px 5px white;
-    ;
+  
     .logo{
-        height: 60px;
-        padding: 10px;
-        margin-left: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      height: 60px;
+      padding: 10px;
+      margin-left: 3%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  
     ul {
-        display: flex;
-        gap: 20px;
-        margin-right: 3%;
+      display: flex;
+      gap: 20px;
+      margin-right: 3%;
     }
+  
     li { 
-        list-style: none;
+      list-style: none;
     }
+  
     a {
-        text-decoration: none;
-        font-size: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
     }
+  
     a:hover {
-        color: orange;
+      color: orange;
     }
-}
-
-main{
-    /* background-color: gray; */
-    display: flex;
-    flex-direction: column;
-    .title-welcome{
-        font-size: 45px;
-        display: flex;
+  }
+  
+  main{
+    // background-color: #ccc;
+    .welcome{
+      // background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 75px;
+      margin-top: 100px;
+  
+      p{
+        font-family: cursive;
         color: white;
-        justify-content: last baseline;
-        padding: 2%;
-        /* background-color: yellow; */
+        font-size: 5rem;
+        text-shadow: 10px 10px 7px white;
+      }
     }
-    .title-about-me{
-        /* background-color: aqua; */
-        font-size: 45px;
+  
+    .about-me{
+      // background-color: chocolate;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 50px;
+  
+      p {
+        font-size: 36px;
         color: white;
+      }
+    }
+  
+    .container-about-me{
+      // background-color: grey;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+  
+      .img-about-me{
+        // background-color: rebeccapurple;
+        width: 50%;
+        height: 500px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 2%;
-    }
-}
-
-.about-me{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: aqua;
-    .profile{
-        display: flex;
-        flex-direction: row
+        justify-content: center;
+  
         img {
-            width: 500px;
-
+            width: 300px;
+          border-radius: 10%;
         }
+      }
+  
+      .description-about-me{
+        //background-color: wheat;
+        width: 50%;
+  
+        p {
+          margin: 50px;
+          text-align: justify;
+          color: white;
+        }
+      }
     }
-}
+
+    .container-habilitys{
+        // background-color: aliceblue;
+        height: 600px;
+
+        .title-habilitys{
+            // background-color: grey;
+            
+            p {
+                color: white;
+                font-size: 36px;
+                text-align: center;
+                padding: 30px;
+            }
+        }
+
+        .container {
+            // background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            .text-habilitys {
+              padding: 50px;
+              width: 50%;
+              color: white;
+            }
+          
+            .img-habilitys {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 50%;
+              // background-color: aquamarine;
+          
+              img {
+                width: 200px;
+                border-radius: 10px;
+              }
+            }
+          }
+          
+
+    }
+  }
+  
