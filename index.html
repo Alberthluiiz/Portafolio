@@ -4,73 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Guillén</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <img class="logo" src="./img/logo-claro.png" alt="Logo Luis Guillén" />
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="welcome">
-        <p>Bienvenidos a mi pagina</p>
-      </div>
-      <div class="about-me">
-        <p>Sobre mí</p>
-      </div>
-      <div class="container-about-me">
-        <div class="img-about-me">
-          <img src="./img/profile.png" alt="Foto de Perfil Luis Guillén">
-        </div>
-        <div class="description-about-me">
-          <p>Soy un apasionado por la tecnología con una gran pasión por el
-            trabajo en equipo y la creación de aplicaciones web. Me encanta
-            sumergirme en el mundo de la programación y el diseño para
-            desarrollar soluciones innovadoras y atractivas.
-            
-            
-            Desde muy joven, he estado fascinado por la tecnología y su
-            potencial para cambiar nuestras vidas de maneras asombrosas.
-            Esta pasión me ha llevado a estudiar y especializarme en el
-            desarrollo de software, y me siento emocionado de compartir mis
-            conocimientos y experiencias con ustedes a través de esta
-            plataforma.
-            
-            
-            Uno de mis mayores placeres es colaborar en equipos
-            multidisciplinarios, donde puedo combinar mis habilidades técnicas
-            con la creatividad y la perspectiva de otros profesionales. Creo
-            firmemente en el poder de la colaboración y en cómo trabajar
-            juntos podemos lograr resultados sorprendentes. </p>
-        </div>
-      </div>
-      <section class="container-habilitys">
-        <div class="title-habilitys">
-          <p>Mis habilidades</p>
-        </div>
+    <!-- navbar -->
+    <header class="main-header">
+      <nav class="navbar">
         <div class="container">
-          <div class="text-habilitys">
-            <p>Soy un investigador dedicado, siempre buscando
-              estar al tanto de las nuevas tecnologías,
-              metodologías de desarrollo y mejores prácticas en la
-              industria del software. Considero que la
-              investigación constante es fundamental para
-              mantenerme actualizado y poder ofrecer soluciones
-              innovadoras en mis proyectos.</p>
+          <h1 class="logo"> Luis Guillén</h1>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contactame">Contactame</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="showcase">
+        <div class="container">
+          <h2 class="display">Mis Habilidades</h2>
+          <p>
+            Soy un investigador dedicado, siempre buscando estar al tanto de las
+            nuevas tecnologías, metodologías de desarrollo y mejores prácticas
+            en la industria del software. Considero que la investigación
+            constante es fundamental para mantenerme actualizado y poder ofrecer
+            soluciones innovadoras en mis proyectos.
+          </p>
+          <a href="#contact" class="btn btn-dark">Contactame</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-flex">
+          <div class="about-flex-image">
+            <img src="./img/profile.png" alt="Foto de perfil" />
           </div>
-          <div class="img-habilitys">
-            <img src="./img/teclado.jpg" alt="Mis Habilidades">
+          <div class="about-flex-description">
+            <h4>Luis Guillén</h4>
+            <p>
+              Soy un apasionado por la tecnología con una gran pasión por el
+              trabajo en equipo y la creación de aplicaciones web. Me encanta
+              sumergirme en el mundo de la programación y el diseño para
+              desarrollar soluciones innovadoras y atractivas.
+            </p>
+            <p>
+              Desde muy joven, he estado fascinado por la tecnología y su
+              potencial para cambiar nuestras vidas de maneras asombrosas. Esta
+              pasión me ha llevado a estudiar y especializarme en el desarrollo
+              de software, y me siento emocionado de compartir mis conocimientos
+              y experiencias con ustedes a través de esta plataforma.
+            </p>
+            <p>
+              Uno de mis mayores placeres es colaborar en equipos
+              multidisciplinarios, donde puedo combinar mis habilidades técnicas
+              con la creatividad y la perspectiva de otros profesionales. Creo
+              firmemente en el poder de la colaboración y en cómo trabajar
+              juntos podemos lograr resultados sorprendentes.
+            </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <p class="large">
+          Algunos de los proyectos que he realizado
+        </p>
+        <div class="projects-flex">
+          <div class="projects-flex-box">
+            <img src="./img/javascript.png" alt="">
+            <h4>Calculadora</h4>
+            <p>
+              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
+            </p>
+            <h5> #Html #Css #Js</h5>
+          </div>
+          <div class="projects-flex-box">
+            <img src="./img/javascript.png" alt="">
+            <h4>Calculadora</h4>
+            <p>
+              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
+            </p>
+            <h5> #Html #Css #Js</h5>
+          </div>
+          <div class="projects-flex-box">
+            <img src="./img/javascript.png" alt="">
+            <h4>Calculadora</h4>
+            <p>
+              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
+            </p>
+            <h5> #Html #Css #Js</h5>
+          </div>
+          <div class="projects-flex-box">
+            <img src="./img/javascript.png" alt="">
+            <h4>Calculadora</h4>
+            <p>
+              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
+            </p>
+            <h5> #Html #Css #Js</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2>Contactame</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum architecto perferendis debitis magnam, perspiciatis ipsa itaque accusamus in possimus quae quasi delectus iure facere laudantium eum nisi ullam nulla?
+        </p>
+
+        <form action="">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-group-control" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" class="form-group-control" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="name">Mensaje</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-group-control"></textarea>
+          </div>
+          <button class="btn btn-dark">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#">By: Luis Guillén</a>
+        <a href="#">2023</a>
+      </div>
+    </footer>
   </body>
 </html>
