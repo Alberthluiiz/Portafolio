@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #1E2B38;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2, p, h4 {
+  color: white;
+}
+
+header {
+  background: url('/img/fondo_computer.png') center center;
+  background-size: cover;
+  height: 100vh;
+
+  .navbar-flex {
+    position: relative;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+
+    img {
+      padding-left: 80px;
+      height: 35px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 80px;
+      gap: 20px;
+
+      li {
+        a {
+          color: white;
+
+          &:hover {
+            color: rgb(113, 233, 213);
+          }
+        }
+      }
+    }
+  }
+
+  .showcase {
+    height: 100%;
+
+    h2 {
+      margin-top: 200px;
+      font-size: 5rem;
+    }
+
+    p {
+      margin-top: 50px;
+      width: 60rem;
+      padding: 50px;
+      font-size: 20px;
+      border: 0.1 solid #fafafa;
+      border-radius: 1rem;
+    }
+
+    .efect {
+      background: #fafafa10;
+      backdrop-filter: blur(0.4rem);
+    }
+  }
+}
+
+
+.about {
+  margin-top: 100px;
+  height: 90vh;
+
+  .container {
+    h2 {
+      text-align: center;
+      margin: 50px;
+      font-size: 5rem;
+      color: white;
+    }
+
+    .about-flex {
+      display: flex;
+      flex-direction: row;
+
+      .about-flex-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        img {
+          height: 300px;
+          width: 300px;
+          border-radius: 50%;
+        }
+      }
+
+      .about-flex-description {
+        font-size: 20px;
+        border: 0.1 solid #fafafa;
+        border-radius: 1rem;
+        background: white;
+        padding: 50px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #333;
+
+        h4 {
+          font-size: 1.5rem;
+          margin-bottom: 30px;
+          color: #fff;
+        }
+
+        p {
+          text-align: justify;
+          margin-bottom: 35px;
+          color: #fff;
+        }
+      }
+
+      .about-flex-description {
+        background: #fafafa10;
+        backdrop-filter: blur(0.5rem);
+      }
+    }
+  }
+}
+
+
+.projects{
+  height: 100vb;
+  margin-top: 50px;
+  background: orange;
+
+  .container{
+    background: greenyellow;
+
+    h2 {
+      font-size: 5rem;
+      text-align: center;
+      background: orange;
+      padding: 35px;
+    }
+
+    .large {
+      font-size: 1.5rem;
+      padding: 35px;
+      background: gray;
+    }
+  }
+
+  .projects-flex{
+    height: 100%;
+    position: absolute;
+    background: rebeccapurple;
+    padding: 35px;
+
+    .projects-flex-box{
+      background: #1E2B38;
+     width: 500px;
+     height: 750px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     img {
+      background: #666;
+      height: 250px;
+     }
+    }
+  }
+}
+
+
+  .contact {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+  
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #333;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #666;
+      }
+  
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: left;
+  
+        .form-group {
+          label {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #333;
+          }
+  
+          input,
+          textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+  
+          textarea {
+            resize: vertical;
+          }
+        }
+  
+        button {
+          padding: 10px 20px;
+          font-size: 1rem;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .container a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 50px;
+  }
+  
