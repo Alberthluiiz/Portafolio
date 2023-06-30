@@ -4,73 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Guillén</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <!-- navbar -->
     <header class="navbar">
       <nav class="navbar-flex">
-          <a href="#">
-            <img src="./img/logo-claro.png" alt="logo luis" height="50">
-          </a>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contactame">Contactame</a></li>
-          </ul>
+        <a href="#">
+          <img src="/img/logo-claro.png" alt="logo luis" height="50">
+        </a>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="/vistas/blog.html">Blog</a></li>
+          <li><a href="#contactame">Contactame</a></li>
+        </ul>
       </nav>
-
+    
       <div class="showcase">
         <div class="container">
           <h2 class="display">Mis Habilidades</h2>
-          <p>
+          <p class="efect">
             Soy un investigador dedicado, siempre buscando estar al tanto de las
             nuevas tecnologías, metodologías de desarrollo y mejores prácticas
             en la industria del software. Considero que la investigación
             constante es fundamental para mantenerme actualizado y poder ofrecer
             soluciones innovadoras en mis proyectos.
           </p>
-          <a href="#contact" class="btn btn-dark">Contactame</a>
         </div>
       </div>
     </header>
+    
 
     <section class="about">
       <div class="container">
         <h2>About me</h2>
         <div class="about-flex">
           <div class="about-flex-image">
-            <img src="./img/profile.png" alt="Foto de perfil" />
+            <img src="/img/profile.png" alt="Foto de perfil" />
           </div>
           <div class="about-flex-description">
             <h4>Luis Guillén</h4>
             <p>
-              Soy un apasionado por la tecnología con una gran pasión por el
-              trabajo en equipo y la creación de aplicaciones web. Me encanta
-              sumergirme en el mundo de la programación y el diseño para
-              desarrollar soluciones innovadoras y atractivas.
+              Soy un apasionado por la tecnología con una gran pasión por el trabajo en equipo y la creación de aplicaciones web. Me encanta sumergirme en el mundo de la programación y el diseño para desarrollar soluciones innovadoras y atractivas.
             </p>
             <p>
-              Desde muy joven, he estado fascinado por la tecnología y su
-              potencial para cambiar nuestras vidas de maneras asombrosas. Esta
-              pasión me ha llevado a estudiar y especializarme en el desarrollo
-              de software, y me siento emocionado de compartir mis conocimientos
-              y experiencias con ustedes a través de esta plataforma.
+              Desde muy joven, he estado fascinado por la tecnología y su potencial para cambiar nuestras vidas de maneras asombrosas. Esta pasión me ha llevado a estudiar y especializarme en el desarrollo de software, y me siento emocionado de compartir mis conocimientos y experiencias con ustedes a través de esta plataforma.
             </p>
             <p>
-              Uno de mis mayores placeres es colaborar en equipos
-              multidisciplinarios, donde puedo combinar mis habilidades técnicas
-              con la creatividad y la perspectiva de otros profesionales. Creo
-              firmemente en el poder de la colaboración y en cómo trabajar
-              juntos podemos lograr resultados sorprendentes.
+              Uno de mis mayores placeres es colaborar en equipos multidisciplinarios, donde puedo combinar mis habilidades técnicas con la creatividad y la perspectiva de otros profesionales. Creo firmemente en el poder de la colaboración y en cómo trabajar juntos podemos lograr resultados sorprendentes.
             </p>
           </div>
         </div>
       </div>
     </section>
+    
 
+    <!-- projects -->
     <section class="projects">
       <div class="container">
         <h2>Proyectos</h2>
@@ -79,45 +70,107 @@
         </p>
         <div class="projects-flex">
           <div class="projects-flex-box">
-            <img src="./img/javascript.png" alt="">
-            <h4>Calculadora</h4>
-            <p>
-              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
-            </p>
-            <h5> #Html #Css #Js</h5>
+            <div class="card">
+              <img src="/img/calculadora.png" alt="">
+              <h4>Calculadora</h4>
+              <p>
+                Calculadora realizada con Html, Css, JavaScript, con un diseño claro y oscuro.
+              </p>
+              <h5>#Html #Css #Js</h5>
+              <ul>
+                <li><a href="#"><img src="/img/iconos/folder.svg" alt="">Ver Proyecto</a></li>
+                <li><a href="#"><img src="/img/iconos/github.svg" alt="">GitHub</a></li>
+              </ul>
+            </div>
           </div>
           <div class="projects-flex-box">
-            <img src="./img/javascript.png" alt="">
-            <h4>Calculadora</h4>
-            <p>
-              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
-            </p>
-            <h5> #Html #Css #Js</h5>
+            <div class="card">
+              <img src="/img/card-pokemon.png" alt="">
+              <h4>Calculadora</h4>
+              <p>
+                Calculadora realizada con Html, Css, JavaScript, con un diseño claro y oscuro.
+              </p>
+              <h5>#Html #Css #Js</h5>
+              <ul>
+                <li><a href="#"><img src="/img/iconos/folder.svg" alt="">Ver Proyecto</a></li>
+                <li><a href="#"><img src="/img/iconos/github.svg" alt="">GitHub</a></li>
+              </ul>
+            </div>
           </div>
           <div class="projects-flex-box">
-            <img src="./img/javascript.png" alt="">
-            <h4>Calculadora</h4>
-            <p>
-              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
-            </p>
-            <h5> #Html #Css #Js</h5>
+            <div class="card">
+              <img src="/img/imagenes-apiladas.png" alt="">
+              <h4>Calculadora</h4>
+              <p>
+                Calculadora realizada con Html, Css, JavaScript, con un diseño claro y oscuro.
+              </p>
+              <h5>#Html #Css #Js</h5>
+              <ul>
+                <li><a href="#"><img src="/img/iconos/folder.svg" alt="">Ver Proyecto</a></li>
+                <li><a href="#"><img src="/img/iconos/github.svg" alt="">GitHub</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="projects-flex-box">
-            <img src="./img/javascript.png" alt="">
-            <h4>Calculadora</h4>
-            <p>
-              Calculadora realizada con Html, Css, javascript, con un diseño claro y obscuro.
-            </p>
-            <h5> #Html #Css #Js</h5>
-          </div>
+        </div>
+        
         </div>
       </div>
     </section>
 
+    <!-- Blog -->
+    <section class="blog">
+      <div class="container">
+        <h2>Blog Personal</h2>
+        <p class="large">
+          Bienvenidos a mi blog personal. Aquí encontrarán contenido fascinante sobre tecnología, así como todo
+lo que voy aprendiendo y considero importante en el mundo de las diferentes tecnologías.
+        </p>
+        <div class="blog-flex">
+          <div class="blog-flex-box">
+            <div>
+              <img src="/img/iconos/docker-icon.svg" alt="">
+              <h4>Docker</h4>
+              <p>
+                Calculadora realizada con Html, Css, JavaScript, con un diseño claro y oscuro.
+              </p>
+              <h5>#Html #Css #Js</h5>
+              <a href="#"><button>Leer Más</button></a>
+            </div>
+          </div>
+          <div class="blog-flex-box">
+            <div>
+              <img src="/img/html.png" alt="">
+              <h4>Html - Css - JavaScript</h4>
+              <p>
+                Calculadora realizada con Html, Css, JavaScript, con un diseño claro y oscuro.
+              </p>
+              <h5>#Html #Css #Js</h5>
+              <a href="#"><button>Leer Más</button></a>
+            </div>
+          </div>
+          <div class="blog-flex-box">
+            <div>
+              <img src="/img/iconos/mysql.png" alt="">
+              <h4>Mysql</h4>
+              <p>
+                Calculadora realizada con Html, Css, JavaScript, con un diseño claro y oscuro.
+              </p>
+              <h5>#Html #Css #Js</h5>
+              <a href="#"><button>Leer Más</button></a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contacts -->
     <section class="contact">
       <div class="container">
         <h2>Contactame</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum architecto perferendis debitis magnam, perspiciatis ipsa itaque accusamus in possimus quae quasi delectus iure facere laudantium eum nisi ullam nulla?
+        <p>Puedes enviarme un correo directamente
         </p>
 
         <form action="">
@@ -138,10 +191,11 @@
       </div>
     </section>
 
+
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <a href="#">By: Luis Guillén</a>
-        <a href="#">2023</a>
+        <a href="#">By: Luis Guillén - 2023</a>
       </div>
     </footer>
   </body>
