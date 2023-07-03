@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Rubik+Dirt&family=Teko:wght@300&display=swap");
+
+// Creamos variables
+:root {
+  // --padding-container: 100px 0; // Container
+  --color-text-dark: #fff;
+  --color-navbar: #fff;
+  --color-text-description: #fff;
+  --color-text-card: #12123a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* ----- ----- START HEADER ----- ----- */
+
+header {
+  width: 100%;
+  background: url("/img/computer.png") #1b2841;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+
+  .container {
+    position: relative;
+    height: 800px;
+    &-menu {
+      width: 100%;
+      text-align: right; // Mandamos los elementos a la derecha
+
+      a {
+        color: var(--color-navbar);
+        font-size: 20px;
+        font-weight: 200;
+        display: inline-block;
+        margin: 40px 20px;
+        text-decoration: none;
+        position: relative; // utilizamos para dar efectos
+      }
+
+      a:hover {
+        color: #3a7be2;
+      }
+    }
+    &-description {
+      width: 100%;
+      color: var(--color-text-description);
+      position: absolute; // Efecto paralax
+      top: 40%;
+      margin-top: -52px;
+      &-title {
+        font-size: 50px;
+        font-weight: 600;
+        &-text {
+          font-weight: 300;
+          width: 1200px;
+          font-size: 20px;
+          font-style: italic;
+          margin-top: 20px;
+          border: 3px solid #fafafa10;
+          border: 1rem;
+          padding: 15px;
+          border-radius: 20px;
+        }
+        &-text {
+            background: #fafafa10;
+            backdrop-filter: blur(0.4rem);
+        }
+      }
+    }
+  }
+}
+/* ----- ----- END HEADER ----- ----- */
+
+
+/* ----- ----- START MAIN ----- ----- */
+.main {
+    background: url('/img/bg-textura.png');
+    background-repeat: repeat;
+    /* ---- About me ----- */
+    .aboutme {
+        .container {
+            overflow: visible;
+            position: relative;
+            article {
+                background: #fff;
+                padding: 40px;
+                width: 60%; // Tamaño del Articulo 
+                position: relative;
+                // top: 500px;
+                top: 150px; // Ubicación del articulo
+                z-index: 1;
+                float: right;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, .35); // sombra
+                h3 {
+                    font-size: 50px;
+                    font-weight: 300; //Tamaño ligt
+                    margin-bottom: 40px;
+                }
+                p {
+                    line-height: 28px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-photo {
+            width: 80%;
+            position: absolute;
+            left: 0;
+            top: -50px;
+            z-index: 0;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+            img {
+                vertical-align: text-top;
+                width: 100%;
+            }
+        }
+    }
+
+    /* ----- Projects ----- */
+    .projects {
+        padding-top: 900px;
+        margin-bottom: 50px;
+        /* .container {
+            // background: #12123a;
+            // border: 1px solid #3a7be2; // Borde gia 
+        } */
+        .cardproject {
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid saddlebrown;
+            &-titleproject {
+                font-size: 40px;
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 40px;
+                &-text {
+                    color: var(--color-text-card);
+                    margin-bottom: 50px;
+                }
+            }
+            .contentflex{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                /* Contorno de card */
+                .card {
+                    background: transparent;
+                    border: 0.5px solid #121741; // Borde de todo el contorno de la card
+                    width: 400px;
+                    height: 600px;
+                    padding: 15px;
+                    border-radius: 20px;
+                    &-photo {
+                        // background: yellow;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        width: 100%;
+                        height: 50%;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+                        padding: 20px;
+                        border-radius: 20px;
+                        img {
+                            align-items: center;
+                            justify-content: center;
+                            max-width: 100%;
+                            border-radius: 20px;
+                        }
+                    }
+                    
+                }
+                .card {
+                    background: #6ec8ee1d;
+                backdrop-filter: blur(0.1rem);
+                &-description{
+                    padding: 20px;
+                    border-top: 1px solid var(--color-text-card); // Borde de linea superior de titulo
+                    // background: #3a7be2;
+                    margin-top: 40px;
+                    &-title {
+                        font-size: 25px;
+                        font-weight: 300;
+                        margin-bottom: 20px;
+                        &-text {
+                            line-height: 28px;
+                        margin-bottom: 20px;
+                        }
+                    }
+                    &-link {
+                        // background: greenyellow;
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+                            li {
+                                list-style: none;
+                                a {
+                                    text-decoration: none;
+                                    font-size: 20px;
+                                    color: var(--color-text-description);
+                                    gap: 50px;
+                                    span {
+                                        padding: 12px;
+                                        i {
+                                            color: var(--color-text-card);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+
+    /* ----- Blog ----- */
+    
+}
+/* ----- ----- END MAIN ----- ----- */
