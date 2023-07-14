@@ -38,7 +38,7 @@ header {
 
   .container {
     position: relative;
-    height: 700px;
+    height: 800px;
     &-menu {
       width: 100%;
       text-align: right; // Mandamos los elementos a la derecha
@@ -58,17 +58,18 @@ header {
       }
     }
     &-description {
-      width: 100%;
+      width: 100%; // Mis Habilidades
       color: var(--color-text-description);
       position: absolute; // Efecto paralax
-      top: 40%;
+      top: 30%;
       margin-top: -52px;
       &-title {
         font-size: 50px;
         font-weight: 600;
         &-text {
           font-weight: 300;
-          width: 1200px;
+          width: 80%;
+          //width: 900px;
           font-size: 20px;
           font-style: italic;
           margin-top: 20px;
@@ -102,8 +103,8 @@ header {
                 padding: 40px;
                 width: 60%; // Tamaño del Articulo 
                 position: relative;
-                // top: 500px;
-                top: 150px; // Ubicación del articulo
+                top: 600px; // Ubicación del articulo
+                //top: 75px;
                 z-index: 1;
                 float: right;
                 box-shadow: 0px 0px 15px rgba(0, 0, 0, .35); // sombra
@@ -164,7 +165,7 @@ header {
                     background: transparent;
                     border: 0.5px solid #121741; // Borde de todo el contorno de la card
                     width: 400px;
-                    height: 600px;
+                    //height: 600px;
                     padding: 15px;
                     border-radius: 20px;
                     &-photo {

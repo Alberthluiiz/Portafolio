@@ -34,7 +34,7 @@ header {
 }
 header .container {
   position: relative;
-  height: 700px;
+  height: 800px;
 }
 header .container-menu {
   width: 100%;
@@ -56,7 +56,7 @@ header .container-description {
   width: 100%;
   color: var(--color-text-description);
   position: absolute;
-  top: 40%;
+  top: 30%;
   margin-top: -52px;
 }
 header .container-description-title {
@@ -65,7 +65,7 @@ header .container-description-title {
 }
 header .container-description-title-text {
   font-weight: 300;
-  width: 1200px;
+  width: 80%;
   font-size: 20px;
   font-style: italic;
   margin-top: 20px;
@@ -98,7 +98,7 @@ header .container-description-title-text {
   padding: 40px;
   width: 60%;
   position: relative;
-  top: 150px;
+  top: 600px;
   z-index: 1;
   float: right;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
@@ -155,7 +155,6 @@ header .container-description-title-text {
   background: transparent;
   border: 0.5px solid #121741;
   width: 400px;
-  height: 600px;
   padding: 15px;
   border-radius: 20px;
 }
