@@ -1,0 +1,22 @@
+/* Creo mis varialbes */
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #10a7ea;
+$secondary-color: #273746;
+$primary-gray: #f9f9f9;
+
+// Reset de la pagina
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  background-color: #1E2B38;
+}
+
+.imagen {
+  height: 35px;
+}

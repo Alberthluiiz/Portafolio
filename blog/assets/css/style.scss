@@ -1,0 +1,163 @@
+// Variables
+$fondo: #f2f2f2;
+$azulPrimario: #5f6ad4;
+$azulSecundario: #7780da;
+$grisOscuro: #3b3b3b;
+$grisClaro: #909090;
+$texto: #292929;
+$verde: #48b04d;
+$font-size: 16px;
+
+// Reset default margin and padding
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Set a default background color for all elements
+body {
+  background-color: $grisClaro;
+}
+
+// HEADER
+header {
+  .menu {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+
+      a {
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  ul {
+    right: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+}
+
+.main,
+.sidebar {
+  .titulo-seccion {
+    h3 {
+      font-family: $azulPrimario;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      font-weight: normal;
+      color: $grisOscuro;
+      padding-bottom: 10px;
+      border-bottom: 4px solid $verde;
+      margin-bottom: 20px;
+    }
+  }
+
+  .div {
+    padding: 0;
+  }
+
+  .posts {
+    margin-bottom: 30px;
+
+    .contenedor {
+      background: #fff;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+
+      .thumb {
+        img {
+          width: 100%;
+          vertical-align: top;
+          height: auto;
+
+        }
+
+      }
+    }
+
+    .info {
+      padding: 1.25em;
+
+      .titulo {
+        line-height: 18px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+
+        a {
+          color: $grisOscuro;
+        }
+      }
+
+      .fecha {
+        color: $grisClaro;
+        font-size: 14px;
+        margin-bottom: 18px;
+      }
+
+      .extracto {
+        color: $texto;
+        font-size: 16px;
+        height: 130px;
+        max-height: 130px;
+        line-height: 28px;
+        margin-bottom: 16px;
+        overflow: hidden;
+
+        &:hover {
+          overflow: auto;
+        }
+      }
+
+      .categorias {
+        ul {
+          list-style: none;
+
+          li {
+            display: inline-block;
+          }
+
+        }
+
+        a {
+          color: $grisClaro;
+          font-size: 16px;
+          font-weight: bold;
+          text-decoration: none;
+          margin-right: 20px;
+
+          &:hover {
+            color: $azulPrimario;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

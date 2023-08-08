@@ -1,0 +1,127 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #909090;
+}
+
+header .menu {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu .logo a img {
+  height: 50px;
+}
+header ul {
+  right: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header ul li {
+  text-align: center;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+header ul li a:hover {
+  color: orange;
+}
+
+.main .titulo-seccion h3,
+.sidebar .titulo-seccion h3 {
+  font-family: #5f6ad4;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: #3b3b3b;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #48b04d;
+  margin-bottom: 20px;
+}
+.main .div,
+.sidebar .div {
+  padding: 0;
+}
+.main .posts,
+.sidebar .posts {
+  margin-bottom: 30px;
+}
+.main .posts .contenedor,
+.sidebar .posts .contenedor {
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.main .posts .contenedor .thumb img,
+.sidebar .posts .contenedor .thumb img {
+  width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+.main .posts .info,
+.sidebar .posts .info {
+  padding: 1.25em;
+}
+.main .posts .info .titulo,
+.sidebar .posts .info .titulo {
+  line-height: 18px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main .posts .info .titulo a,
+.sidebar .posts .info .titulo a {
+  color: #3b3b3b;
+}
+.main .posts .info .fecha,
+.sidebar .posts .info .fecha {
+  color: #909090;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.main .posts .info .extracto,
+.sidebar .posts .info .extracto {
+  color: #292929;
+  font-size: 16px;
+  height: 130px;
+  max-height: 130px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.main .posts .info .extracto:hover,
+.sidebar .posts .info .extracto:hover {
+  overflow: auto;
+}
+.main .posts .info .categorias ul,
+.sidebar .posts .info .categorias ul {
+  list-style: none;
+}
+.main .posts .info .categorias ul li,
+.sidebar .posts .info .categorias ul li {
+  display: inline-block;
+}
+.main .posts .info .categorias a,
+.sidebar .posts .info .categorias a {
+  color: #909090;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.main .posts .info .categorias a:hover,
+.sidebar .posts .info .categorias a:hover {
+  color: #5f6ad4;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
